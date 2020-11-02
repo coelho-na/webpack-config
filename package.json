@@ -1,0 +1,25 @@
+{
+  "name": "webpack-config",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coelho-na/webpack-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coelho-na/webpack-config/issues"
+  },
+  "homepage": "https://github.com/coelho-na/webpack-config#readme",
+  "devDependencies": {
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  }
+}
