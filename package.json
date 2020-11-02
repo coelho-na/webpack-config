@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/coelho-na/webpack-config#readme",
   "devDependencies": {
+    "css-loader": "^5.0.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.3.2",
     "webpack-cli": "^4.1.0"
   }
