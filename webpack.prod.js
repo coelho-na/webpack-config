@@ -1,6 +1,7 @@
 const path = require("path");
 const common = require("./webpack.common");
 const merge = require("webpack-merge");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
@@ -10,4 +11,5 @@ module.exports = merge(common, {
     filename: "main.[contenthash].js", // [contenthash] Convert an input of any length in to a fixed size string of text. no matter how long the text is, it will be converted into an array of numbers an letters.
     path: path.resolve(__dirname, "dist"),
   },
+  plugins: [new CleanWebpackPlugin()],
 });
