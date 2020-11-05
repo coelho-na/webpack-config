@@ -3,8 +3,10 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   // definy entry point
-  entry: "./src/index.js",
-
+  entry: {
+    main: "./src/index.js",
+    vendor: "./src/vendor.js",
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
@@ -24,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: ["html-loader"],
+        use: ["html-loader"], // require any images and imported into Javascript
       },
       {
         test: /\.(svg|png|jpg|gif)$/,

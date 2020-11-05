@@ -7,7 +7,7 @@ module.exports = merge(common, {
 
   // define output points
   output: {
-    filename: "main.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
 });
