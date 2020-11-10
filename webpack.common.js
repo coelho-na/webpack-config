@@ -1,6 +1,5 @@
 const path = require("path");
 
-
 module.exports = {
   // definy entry point
   entry: {
@@ -23,6 +22,17 @@ module.exports = {
           options: {
             name: "[name].[hash].[ext]",
             outputPath: "img",
+          },
+        },
+      },
+
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
           },
         },
       },
